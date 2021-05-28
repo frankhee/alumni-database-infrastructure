@@ -1,9 +1,9 @@
-resource "azurerm_resource_group" "default" {
-  name     = var.random
-  location = "West US 2"
+resource "aws_ecr_repository" "alumni_database_ecr" {
+  for_each             = var.repository_names
+  name                 = each.value
+  image_tag_mutability = "MUTABLE"
 
-  tags = {
-    environment = "dev"
-    project     = local.az_tag
+  image_scanning_configuration {
+    scan_on_push = true
   }
 }

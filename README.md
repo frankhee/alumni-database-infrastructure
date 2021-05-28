@@ -5,25 +5,24 @@
 | Name | Version |
 |------|---------|
 | terraform | ~> 0.14 |
-| azurerm | 2.42.0 |
+| aws | >= 3.20.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| azurerm | 2.42.0 |
+| aws | >= 3.20.0 |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| random | Brief description of varaible usage | `string` | `"random"` | no |
+| access\_key | AWS access key | `string` | n/a | yes |
+| repository\_names | Alumni database frontend/backend ECR repository name | `map(any)` | n/a | yes |
+| secret\_key | AWS secret key | `string` | n/a | yes |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| az\_resource\_group\_name | n/a |
-| id | n/a |
+No output.
 
 <!--- END_TF_DOCS --->

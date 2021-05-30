@@ -1,0 +1,15 @@
+[
+  {
+    "name": "db_backend",
+    "image": "869246114496.dkr.ecr.us-east-2.amazonaws.com/alumni-database-backend:dev",
+    "essential": true,
+    "portMappings": [
+        {
+        "containerPort": 5000,
+        "hostPort": 5000
+        }
+    ],
+    "memory": 512,
+    "cpu": 256
+  }
+]

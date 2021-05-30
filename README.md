@@ -18,6 +18,8 @@
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | access\_key | AWS access key | `string` | n/a | yes |
+| backend\_task | Backend task definitions for the backend | `map(any)` | n/a | yes |
+| frontend\_task | Frontend task definitions for the frontend | `map(any)` | n/a | yes |
 | repository\_names | Alumni database frontend/backend ECR repository name | `map(any)` | n/a | yes |
 | secret\_key | AWS secret key | `string` | n/a | yes |
 
